@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "gestion-centre-equestre"
+    }
+  },
+  "defaultProject": "gestion-centre-equestre",
+  "cli": {
+    "analytics": false
+  }
 }
