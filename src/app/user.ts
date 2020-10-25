@@ -4,7 +4,7 @@ export interface User {
     email: string;
     password: string;
     firstname : string;
-    secondname: string;
+    lastname: string;
     num: string ;
     licensenum: string;
     usertype: string;
