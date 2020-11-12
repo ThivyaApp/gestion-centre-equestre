@@ -23,7 +23,7 @@ export class GestionChevauxComponent implements OnInit {
 
   goBack(): void {
   this.location.back();
-}
+  }
 
   ngOnInit(): void {
   }
