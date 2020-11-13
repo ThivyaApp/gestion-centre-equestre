@@ -1,4 +1,10 @@
+import { HorseService } from "../../horse.service";
+import { Horse } from "../../horse";
+
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Location } from '@angular/common';
+
 
 @Component({
   selector: 'app-create-horse',
@@ -7,9 +13,40 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateHorseComponent implements OnInit {
 
-  constructor() { }
+  horse: Horse = new Horse();
+  submitted = false;
+
+  constructor(private horseService: HorseService, private router: Router, private location: Location) { }
 
   ngOnInit(): void {
   }
+
+  newHorse(): void {
+    this.submitted = false;
+    this.horse = new Horse();
+  }
+
+  save() {
+    this.horseService
+    .createHorse(this.horse).subscribe(data => {
+      console.log(data)
+      this.horse = new Horse();
+      this.gotoList();
+    }, 
+    error => console.log(error));
+  }
+
+  onSubmit() {
+    this.submitted = true;
+    this.save();    
+  }
+
+  gotoList() {
+    this.router.navigate(['/horses']);
+  }
+
+  goBack(): void {
+    this.location.back();
+    }
 
 }

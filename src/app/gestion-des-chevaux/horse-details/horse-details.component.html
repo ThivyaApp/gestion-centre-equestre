@@ -1,1 +1,32 @@
-<p>horse-details works!</p>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+<div class="boite">
+    <div class="img_cheval">
+        <img
+        src="..\..\assets\cheval.jpeg" 
+        alt="cheval"
+        width="500px"
+        height= "600px"
+        />
+    </div>
+    <div class="creationcheval">
+        <h2>Détail de {{horse.name}}</h2> 
+
+        <hr/>
+        <div *ngIf="horse">
+          <div>
+            <label><b>Nom: </b></label> {{horse.name}}
+          </div>
+          <div>
+            <label><b>Type: </b></label> {{horse.type}}
+          </div>
+          <div>
+            <label><b>Age: </b></label> {{horse.age}}
+          </div>  
+        </div>
+        
+        <br>
+        <br>
+        <button (click)="list()" class="btn">Retour à la liste des chevaux</button><br>
+</div>
+
+

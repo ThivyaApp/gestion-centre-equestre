@@ -1,0 +1,21 @@
+h3 ,p{
+    color: #DA2C38;
+    font-family : Montserrat;
+}
+
+h2, label{
+    color : white;
+    font-family : Montserrat;
+}
+
+.boite {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    justify-content: flex-start
+}
+
+.creationcheval{
+    margin-top: 70px;
+    margin-left: 150px;
+}

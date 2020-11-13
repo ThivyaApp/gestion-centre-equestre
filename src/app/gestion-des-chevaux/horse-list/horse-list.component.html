@@ -1,4 +1,3 @@
-<h1>Hello</h1>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
 <div class="boite">
     <div class="img_cheval">
@@ -11,8 +10,8 @@
     </div>
     <div class="fiches_moniteur">
         <h2>Liste des chevaux</h2>
-        <div class="fiche">
-            <h3>Alberto</h3>
+        <div *ngFor="let horse of horses" class="fiche">
+            <h3>{{horse.name}}</h3>
             <p><strong>Id :</strong> {{horse.id}}
             <br/><strong>Type :</strong> {{horse.type}}
             <br/><strong>Age :</strong> {{horse.age}}</p>

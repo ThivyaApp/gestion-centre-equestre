@@ -9,6 +9,9 @@ import { CreateHorseComponent } from './gestion-des-chevaux/create-horse/create-
 import { HorseDetailsComponent } from './gestion-des-chevaux/horse-details/horse-details.component';
 import { HorseListComponent } from './gestion-des-chevaux/horse-list/horse-list.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +23,9 @@ import { HorseListComponent } from './gestion-des-chevaux/horse-list/horse-list.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

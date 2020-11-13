@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { GestionChevauxComponent } from './gestion-chevaux/gestion-chevaux.component';
 import { PageaccueilMoniteurComponent } from './pageaccueil-moniteur/pageaccueil-moniteur.component'
 import { HorseListComponent } from './gestion-des-chevaux/horse-list/horse-list.component';
+import { CreateHorseComponent } from './gestion-des-chevaux/create-horse/create-horse.component';
+import { HorseDetailsComponent } from './gestion-des-chevaux/horse-details/horse-details.component';
 
 const routes: Routes = [
-  { path: 'gestion-chevaux', component: GestionChevauxComponent },
   { path: 'accueil-moniteur', component: PageaccueilMoniteurComponent },
   { path: 'chevaux', component: HorseListComponent },
+  { path: 'ajout-cheval', component: CreateHorseComponent },
+  { path: 'detail-cheval', component: HorseDetailsComponent }
 ];
 
 @NgModule({

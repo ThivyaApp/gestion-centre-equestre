@@ -12,24 +12,36 @@ import { Router } from '@angular/router';
   templateUrl: './horse-list.component.html',
   styleUrls: ['./horse-list.component.css']
 })
+
 export class HorseListComponent implements OnInit {
 
-  horse: Horse = {
-    id: 1,
-    name: 'Alberto',
-    type: 'Comptois',
-    age : 10
-  };
-
-  constructor(
-    private location: Location
-  ){}
-
-  goBack(): void {
-  this.location.back();
-  }
+  horses: Observable<Horse[]>;
+  constructor(private horseService: HorseService, private router: Router, private location: Location) { }
 
   ngOnInit(): void {
+    this.reloadData();
+  }
+
+  reloadData() {
+    this.horses = this.horseService.getHorseList();
+  }
+
+  deleteHorse(id: number) {
+    this.horseService.deleteHorse(id)
+      .subscribe(
+        data => {
+          console.log(data);
+          this.reloadData();
+        },
+        error => console.log(error));
+  }
+
+  horseDetails(id: number){
+    this.router.navigate(['details', id]);
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 
 }
