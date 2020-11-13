@@ -7,8 +7,23 @@
         height= "600px"
         />
     </div>
-    <div class="accueil-moniteur">
-        
+    <div class="fiches_moniteur">
+        <div class="fiche">
+            <h2>Les chevaux</h2>
+            <p>Pour voir la liste des chevaux, cliquez sur "Voir".</p>
+            <p>Pour ajouter un nouveau cheval à la liste des chevaux, cliquez sur "Ajouter".</p>
+            <button class="button" routerLink="/chevaux">Voir</button>
+            <button class="button" style="margin-left: 10px" routerLink="/ajout-cheval">Ajouter</button>
+        </div>
+
+        <div class="fiche">
+            <h2>Planning</h2>
+            <p>Pour voir le planning, cliquez sur "Voir"</p>
+            <p>Pour ajouter un court au planning, cliquez sur "Ajouter".</p>
+            <button class="button" routerLink="/chevaux">Voir</button>
+            <button class="button" style="margin-left: 10px" routerLink="/ajout-cheval">Ajouter</button>
+        </div> 
+
     </div>
 </div>
-<button (click)="goBack()">Retour</button>
+<button class="btn" routerLink="/">Retour</button>

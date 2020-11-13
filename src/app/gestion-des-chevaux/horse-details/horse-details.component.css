@@ -1,11 +1,19 @@
-h3 ,p{
+h3{
     color: #DA2C38;
     font-family : Montserrat;
 }
-
-h2, label{
+ 
+h2, p, label{
     color : white;
     font-family : Montserrat;
+}
+
+h2{
+    font-size: 30px;
+}
+
+p{
+    font-size: 20px;
 }
 
 .boite {

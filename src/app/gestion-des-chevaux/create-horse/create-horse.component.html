@@ -9,7 +9,8 @@
         />
     </div>
     <div class="creationcheval">
-      <h2>Ajouter un cheval</h2> <br><br>
+      <h2>Ajouter un cheval</h2>
+      <hr/> <br> <br>
         <div [hidden]="submitted" style="width: 400px;">
             <form (ngSubmit)="onSubmit()">
           
@@ -27,7 +28,7 @@
                 <label for="name">Age </label>
                 <input type="number" class="form-control" id="age" required [(ngModel)]="horse.age" name="age">
               </div>
-              <br>
+              <br><br>
               <button type="submit">Submit</button>
             </form>
           </div>
@@ -38,4 +39,4 @@
           </div>
     </div>
 </div>
-<button (click)="goBack()">Retour</button>
+<button class="btn" (click)="goBack()">Retour</button>

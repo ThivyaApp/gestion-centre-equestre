@@ -5,12 +5,14 @@ import { PageaccueilMoniteurComponent } from './pageaccueil-moniteur/pageaccueil
 import { HorseListComponent } from './gestion-des-chevaux/horse-list/horse-list.component';
 import { CreateHorseComponent } from './gestion-des-chevaux/create-horse/create-horse.component';
 import { HorseDetailsComponent } from './gestion-des-chevaux/horse-details/horse-details.component';
+import { GestionChevauxComponent } from './gestion-des-chevaux/gestion-chevaux/gestion-chevaux.component';
 
 const routes: Routes = [
   { path: 'accueil-moniteur', component: PageaccueilMoniteurComponent },
   { path: 'chevaux', component: HorseListComponent },
   { path: 'ajout-cheval', component: CreateHorseComponent },
-  { path: 'detail-cheval/:id', component: HorseDetailsComponent }
+  { path: 'detail-cheval/:id', component: HorseDetailsComponent },
+  { path: 'gestion-chevaux', component: GestionChevauxComponent }
 ];
 
 @NgModule({

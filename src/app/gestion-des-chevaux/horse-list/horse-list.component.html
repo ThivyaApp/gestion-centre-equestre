@@ -17,10 +17,10 @@
             <br/><strong>Type :</strong> {{horse.type}}
             <br/><strong>Age :</strong> {{horse.age}}</p>
 
-            <button (click)="deleteHorse(horse.id)" class="btn">Delete</button>
-            <button (click)="horseDetails(horse.id)" class="btn" style="margin-left: 10px">Details</button>
+            <button (click)="deleteHorse(horse.id)" class="button">Delete</button>
+            <button (click)="horseDetails(horse.id)" class="button" style="margin-left: 10px">Details</button>
             </div>
         </tr>
     </div>
 </div>
-<button (click)="goBack()">Retour</button> 
+<button (click)="goBack()" class="btn">Retour à la liste des chevaux</button><br>

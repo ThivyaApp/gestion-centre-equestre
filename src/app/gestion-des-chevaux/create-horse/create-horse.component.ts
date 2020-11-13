@@ -42,11 +42,11 @@ export class CreateHorseComponent implements OnInit {
   }
 
   gotoList() {
-    this.router.navigate(['chevaux']);
+    this.router.navigate(['accueil-moniteur']);
   }
 
   goBack(): void {
-    this.location.back();
-    }
+    this.router.navigate(['accueil-moniteur']);
+  }
 
 }
