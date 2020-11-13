@@ -42,7 +42,7 @@ export class CreateHorseComponent implements OnInit {
   }
 
   gotoList() {
-    this.router.navigate(['/horses']);
+    this.router.navigate(['chevaux']);
   }
 
   goBack(): void {

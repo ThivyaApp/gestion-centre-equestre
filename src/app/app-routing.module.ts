@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'accueil-moniteur', component: PageaccueilMoniteurComponent },
   { path: 'chevaux', component: HorseListComponent },
   { path: 'ajout-cheval', component: CreateHorseComponent },
-  { path: 'detail-cheval', component: HorseDetailsComponent }
+  { path: 'detail-cheval/:id', component: HorseDetailsComponent }
 ];
 
 @NgModule({

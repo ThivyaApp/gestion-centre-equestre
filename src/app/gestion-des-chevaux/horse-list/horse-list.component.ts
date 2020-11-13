@@ -37,7 +37,7 @@ export class HorseListComponent implements OnInit {
   }
 
   horseDetails(id: number){
-    this.router.navigate(['details', id]);
+    this.router.navigate(['detail-cheval', id]);
   }
 
   goBack(): void {

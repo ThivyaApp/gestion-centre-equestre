@@ -10,12 +10,17 @@
     </div>
     <div class="fiches_moniteur">
         <h2>Liste des chevaux</h2>
-        <div *ngFor="let horse of horses" class="fiche">
+        <tr *ngFor="let horse of horses | async">
+            <div class="fiche">
             <h3>{{horse.name}}</h3>
             <p><strong>Id :</strong> {{horse.id}}
             <br/><strong>Type :</strong> {{horse.type}}
             <br/><strong>Age :</strong> {{horse.age}}</p>
-        </div>
+
+            <button (click)="deleteHorse(horse.id)" class="btn">Delete</button>
+            <button (click)="horseDetails(horse.id)" class="btn" style="margin-left: 10px">Details</button>
+            </div>
+        </tr>
     </div>
 </div>
 <button (click)="goBack()">Retour</button> 
