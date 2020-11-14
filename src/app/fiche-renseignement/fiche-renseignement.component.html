@@ -1,0 +1,27 @@
+<html>
+    <table>
+        <caption>Fiche de Renseignement</caption>
+        <tr>
+            <td> <strong>Identifiant</strong></td>
+            <td> <strong>Nom</strong></td>
+            <td> <strong>Prenom</strong></td>
+            <td> <strong>Mail</strong></td>
+            <td> <strong>Numero de telephone</strong></td>
+            <td> <strong>Numero de license</strong></td>
+            <td> <strong>Type d'utilisateur</strong></td>
+        </tr>
+        <tr *ngFor="let user of users">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.firstname}}</td>    
+            <td>{{user.email}}</td>        
+            <td>{{user.num}}</td>
+            <td>{{user.licensenum}}</td>
+            <td>{{user.usertype}}</td>
+        </tr>
+    </table>
+
+    <!-- pour la mise en page  -->
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</html>

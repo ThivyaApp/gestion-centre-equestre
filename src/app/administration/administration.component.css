@@ -1,0 +1,104 @@
+html{
+    background-color: black;
+}
+
+img{
+    height: 100%;
+    width: 80%;
+}
+
+h1{
+    color: white;
+    position: absolute;
+    left: 35%;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: black;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .button1 {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+    display: inline-block;
+    background-color: white;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: black;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 500px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    }
+
+    .button2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      display: inline-block;
+      background-color: white;
+      border-radius: 10px;
+      border: 4px double #cccccc;
+      color: black;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 500px;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+      }
+
+      .button3 {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+      display: inline-block;
+      background-color: white;
+      border-radius: 10px;
+      border: 4px double #cccccc;
+      color: black;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 500px;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+      }
