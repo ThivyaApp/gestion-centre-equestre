@@ -1,13 +1,13 @@
 <html>
     <table>
-        <caption>Utilisateurs</caption>
+        <caption>Utilisateurs</caption><br>
         <tr>
-            <td> <strong>Nom</strong></td>
-            <td> <strong>Prénom</strong></td>
-            <td> <strong>Statut du compte</strong></td>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Statut du compte</th>
         </tr>
         <tr *ngFor="let user of users">
-            <td>{{user.name}}</td>
+            <td>{{user.lastname}}</td>
             <td>{{user.firstname}}</td>
             <td><select id="Fonctionelle">
                 <option value="">--Modifier le statut du compte--</option>

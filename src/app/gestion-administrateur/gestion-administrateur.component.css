@@ -1,13 +1,22 @@
-html {
-    background-color: black;
-    background-image: url('../../assets/cheval4.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-}
-
 table{
     height: 100%;
     width: 100%;
+    color: white;
+    text-align : center;
+}
+
+caption{
+    font-size: 30px;
+    color:#87C38F;
+}
+
+.boite {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    justify-content: flex-start
+}
+
+th{
+    color:#87C38F;
 }

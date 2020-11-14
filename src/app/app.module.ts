@@ -18,6 +18,7 @@ import { AdministrationComponent } from './administration/administration.compone
 import { GestionAdministrateurComponent } from './gestion-administrateur/gestion-administrateur.component';
 import { GestionUtilisateursComponent } from './gestion-utilisateurs/gestion-utilisateurs.component';
 import { FicheRenseignementComponent } from './fiche-renseignement/fiche-renseignement.component';
+import { PageReprisesComponent } from './page-reprises/page-reprises.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FicheRenseignementComponent } from './fiche-renseignement/fiche-renseig
     AdministrationComponent,
     GestionAdministrateurComponent,
     GestionUtilisateursComponent,
-    FicheRenseignementComponent
+    FicheRenseignementComponent,
+    PageReprisesComponent
   ],
   imports: [
     BrowserModule,

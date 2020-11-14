@@ -1,27 +1,34 @@
-<html>
-    <table>
-        <caption>Fiche de Renseignement</caption>
-        <tr>
-            <td> <strong>Identifiant</strong></td>
-            <td> <strong>Nom</strong></td>
-            <td> <strong>Prenom</strong></td>
-            <td> <strong>Mail</strong></td>
-            <td> <strong>Numero de telephone</strong></td>
-            <td> <strong>Numero de license</strong></td>
-            <td> <strong>Type d'utilisateur</strong></td>
-        </tr>
-        <tr *ngFor="let user of users">
-            <td>{{user.id}}</td>
-            <td>{{user.name}}</td>
-            <td>{{user.firstname}}</td>    
-            <td>{{user.email}}</td>        
-            <td>{{user.num}}</td>
-            <td>{{user.licensenum}}</td>
-            <td>{{user.usertype}}</td>
-        </tr>
-    </table>
+<div class="boite">
+    <div>
+        <table>
+            <caption>Fiche de renseignements</caption><br>
+            <tr>
+                <th>Identifiant</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Mail</th>
+                <th>Numero de telephone</th>
+                <th>Numero de license</th>
+                <th>Type d'utilisateur</th>
+            </tr>
+            <tr *ngFor="let user of users">
+                <td>{{user.id}}</td>
+                <td>{{user.firstname}}</td>    
+                <td>{{user.lastname}}</td>    
+                <td>{{user.email}}</td>        
+                <td>{{user.num}}</td>
+                <td>{{user.licensenum}}</td>
+                <td>{{user.usertype}}</td>
+            </tr>
+        </table>
+    </div>
+    <div class="img_cheval">
+        <img
+        src="../../assets/cheval3.jpg" 
+        alt="img_cheval"
+        width="1000px"
+        height= "100%"
+        />
+    </div>
 
-    <!-- pour la mise en page  -->
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</html>
+</div>

@@ -1,0 +1,24 @@
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+<div class="boite">
+    <div class="img_cheval">
+        <img
+        src="..\..\assets\cheval.jpeg" 
+        alt="cheval"
+        width="500px"
+        height= "600px"
+        />
+    </div>
+    <div class="fiches_moniteur">
+        <h2>Planning des reprises</h2>
+        <tr *ngFor="let reprise of reprises | async">
+            <div class="fiche">
+            <h3>{{reprise.title}}</h3>
+            <p>
+            <strong>De {{reprise.heure_deb}} à {{reprise.heure_fin}}</strong></p>
+
+            <button class="button" style="margin-left: 10px">Participer à cette reprise</button>
+            </div>
+        </tr>
+    </div>
+</div>
+<button (click)="goBack()" class="btn">Retour à la page d'accueil</button><br>

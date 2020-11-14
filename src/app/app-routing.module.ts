@@ -13,6 +13,7 @@ import { GestionChevauxComponent } from './gestion-des-chevaux/gestion-chevaux/g
 import { ReprisesListComponent } from './gestion-des-reprises/reprises-list/reprises-list.component';
 import { CreateRepriseComponent } from './gestion-des-reprises/create-reprise/create-reprise.component';
 import { RepriseDetailsComponent } from './gestion-des-reprises/reprise-details/reprise-details.component';
+import { PageReprisesComponent } from './page-reprises/page-reprises.component';
 
 const routes: Routes = [
   { path: 'accueil-moniteur', component: PageaccueilMoniteurComponent },
@@ -26,7 +27,8 @@ const routes: Routes = [
   { path: 'administration', component: AdministrationComponent},
   { path:'gestion_administrateur', component: GestionAdministrateurComponent},
   { path:'gestion_utilisateur', component: GestionUtilisateursComponent},
-  { path:'fiche_renseignement', component: FicheRenseignementComponent}
+  { path:'fiche_renseignement', component: FicheRenseignementComponent},
+  { path:'page-reprise', component: PageReprisesComponent}
 ];
 
 @NgModule({

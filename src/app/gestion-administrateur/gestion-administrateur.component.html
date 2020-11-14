@@ -1,19 +1,26 @@
-<html>
-    <table>
-        <caption>Gestion des administrateurs</caption>
-        <tr>
-            <td> <strong>Nom</strong></td>
-            <td> <strong>Prénom</strong></td>
-            <td> <strong>Accès à un compte administrateurs</strong></td>
-        </tr>
-        <tr *ngFor="let user of users">
-            <td>{{user.name}}</td>
-            <td>{{user.firstname}}</td>
-            <td><input type="checkbox" checked></td>
-        </tr>
-    </table>
+<div class="boite">
+    <div>
+        <table>
+            <caption>Gestion des administrateurs</caption><br>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Accès à un compte administrateurs</th>
+            </tr>
+            <tr *ngFor="let user of users">
+                <td>{{ user.firstname }}</td>
+                <td>{{ user.lastname }}</td>
+                <td><input type="checkbox" checked></td>
+            </tr>
+        </table>
+    </div>
+    <div class="img_cheval">
+        <img
+        src="../../assets/cheval4.jpg" 
+        alt="img_cheval"
+        width="1000px"
+        height= "100%"
+        />
+    </div>
 
-    <!-- pour la mise en page  -->
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</html>
+</div>
