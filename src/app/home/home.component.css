@@ -1,14 +1,17 @@
 .image-background{
+    position: absolute;
     height:85vh;
     width: 99vw;
     background: blue;
 }
 .image-background h1{
-    width: 60vw;
+    width: 50vw;
+    left: 4vw;
+    top:10vh;
     position: absolute;
-    padding: 1em;
+    font-family: 'Montserrat-SemiBold';
     font-weight: bold;
-    font-size: 96px;
+    font-size: 90px;
     color: white;
     margin-top: -0px;
 }
@@ -16,4 +19,46 @@ img{
     width: inherit;
     padding: 0;
     margin: 0;
+    
+}
+:host {
+    display: block;
+  }
+  
+  .open-close-container {
+    position: absolute;
+    top:35px;
+    right: 30px;
+    height:30px;
+    width:105px;
+    padding: 0.5em;
+    background-color: transparent;
+    z-index: 10;
+  }
+.connexion-form{
+    position: absolute;
+    right: 30px;
+    top: 87px;
+}
+.connexion-form input{
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #272321;
+    border-color: black;
+    padding: 5px;
+}
+input, select, textarea{
+    color: #ffffff;
+}
+
+textarea:focus, input:focus {
+    color: #ffffff;
+}
+
+.connexion-form button{
+    width: 105px;
+    height: 34px;
+    border: none;
+    background: #87C38F;
+    color: white;
 }

@@ -12,11 +12,8 @@ import { RestapiService } from './restapi.service';
 })
 export class AppComponent {
   title = 'gestion-centre-equestre';
-  username:string;
-  password:string;
-  message:any;
-
-
+  
+  isConnected: false;
   constructor() { }
 
 }

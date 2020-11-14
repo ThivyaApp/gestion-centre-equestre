@@ -8,7 +8,7 @@ import { User } from './user';
 })
 export class RestapiService {
 
-  private baseUrl = "http://localhost:8081/api/users"
+  private baseUrl = "http://localhost:8081/centreequestre/api/users"
 
   constructor(private http:HttpClient) { }
 
