@@ -1,0 +1,19 @@
+.image-background{
+    height:85vh;
+    width: 99vw;
+    background: blue;
+}
+.image-background h1{
+    width: 60vw;
+    position: absolute;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 96px;
+    color: white;
+    margin-top: -0px;
+}
+img{
+    width: inherit;
+    padding: 0;
+    margin: 0;
+}

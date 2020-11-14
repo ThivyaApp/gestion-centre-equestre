@@ -1,11 +1,11 @@
-export interface User {
+export class User {
     id: number;
-    name: string;
-    email: string;
+    username: string;
     password: string;
-    firstname : string;
-    lastname: string;
-    num: string ;
-    licensenum: string;
-    usertype: string;
+    // email: string;
+    // firstname : string;
+    // lastname: string;
+    // num: string ;
+    // licensenum: string;
+    // usertype: string;
 }

@@ -1,2 +1,21 @@
-<h1> Gestion centre équestre ! </h1>
-<h2> Page d'accueil </h2>
+<div class="top-header">
+    <a href="#" routerLink="/moniteur">Espace moniteur</a>
+</div>
+<header>
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <a href="#" routerLink="/">Home</a>
+                <a href="#" routerLink="/centre">Le centre</a>
+                <a href="#" routerLink="/activites">Activités</a>
+                <a href="#" routerLink="/offres">Offres</a>
+                <a href="#" routerLink="/inscription" class="inscription-button">Inscription</a>
+                <a href="#" routerLink="/connexion" class="connexion-button">Connexion</a>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
