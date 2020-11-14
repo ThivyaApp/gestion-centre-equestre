@@ -1,18 +1,21 @@
 <div class="boite">
+    <caption>Gestion des administrateurs</caption><br>
     <div>
         <table>
-            <caption>Gestion des administrateurs</caption><br>
             <tr>
-                <th>Nom</th>
-                <th>Prénom</th>
-                <th>Accès à un compte administrateurs</th>
+                <th>id</th>
+                <th>Nom d'utilisateur</th>
+                <th>Nom </th>
+                <th>Prénom </th>
             </tr>
             <tr *ngFor="let user of users">
-                <td>{{ user.firstname }}</td>
+                <td>{{ user.id }}</td>
+                <td>{{ user.username }}</td>
                 <td>{{ user.lastname }}</td>
-                <td><input type="checkbox" checked></td>
+                <td>{{ user.firstname }}</td>
             </tr>
-        </table>
+        </table> <br>
+        <button class="button" style="margin-left: 10px" routerLink="/add-user">Ajouter</button>
     </div>
     <div class="img_cheval">
         <img

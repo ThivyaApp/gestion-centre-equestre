@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { USERS } from '../mock-users';
+import { RestapiService } from '../restapi.service';
+import { User } from '../user';
 
 
 @Component({
@@ -9,10 +10,16 @@ import { USERS } from '../mock-users';
 })
 export class GestionAdministrateurComponent implements OnInit {
 
-  users = USERS;
-  constructor() { }  
-    
+  users:User[];
+  constructor(private restApiService: RestapiService) { }
+
   ngOnInit(): void {
+    this.restApiService.getUser().subscribe((data: User[]) => {
+      console.log(data)
+      this.users = data;
+    }),
+    error => console.error();
+    
   }
 
 }

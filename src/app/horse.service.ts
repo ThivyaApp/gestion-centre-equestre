@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 
 export class HorseService {
-  private baseUrl = 'http://localhost:8080/centreequestre/api/horses';
+  private baseUrl = 'http://localhost:8081/centreequestre/api/horses';
 
   constructor(private http: HttpClient) { }
 

@@ -1,21 +1,26 @@
 <html>
+    <caption>Utilisateurs</caption><br>
     <table>
-        <caption>Utilisateurs</caption><br>
         <tr>
             <th>Nom</th>
             <th>Prénom</th>
-            <th>Statut du compte</th>
+            <th>Type d'utilisateur</th>
+            <th>Modifier le type d'utilisateur</th>
         </tr>
         <tr *ngFor="let user of users">
-            <td>{{user.lastname}}</td>
+            <td>{{user.username}}</td>
             <td>{{user.firstname}}</td>
-            <td><select id="Fonctionelle">
-                <option value="">--Modifier le statut du compte--</option>
-                <option value="fonctionnelle">Fonctionelle</option>
-                <option value="restreint">Restreint</option>
-                <option value="bannis">Bannis</option>
-              </select>
-              </td>
+            <td>{{user.usertype}}</td>
+            <td>
+                <select name="usertype" [(ngModel)]="user.usertype" reqired>
+                    <option value="Moniteur" >Moniteur</option>
+                    <option value="Administrateur">Administrateur</option>
+                    <option value="Élève" selected>Élève</option>
+                </select>
+            </td>
+            <td>
+                <button (click)="updateUser()" class="button" style="margin-left: 10px">Ok</button>
+            </td>
         </tr>
     </table>
 

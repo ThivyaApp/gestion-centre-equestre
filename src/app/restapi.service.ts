@@ -19,4 +19,12 @@ export class RestapiService {
   getUser(): Observable<Object>{
     return this.http.get<User[]>(`${this.baseUrl}`);
   }
+
+  getUserList(): Observable<any> {
+    return this.http.get(`${this.baseUrl}`);
+  }
+
+  updateUser(id: number, value: any): Observable<Object> {
+    return this.http.put(`${this.baseUrl}/${id}`, value);
+  }
 }

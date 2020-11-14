@@ -25,7 +25,8 @@ import { RestapiService } from './restapi.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CreateUserComponent } from './create-user/create-user.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AddUserComponent } from './add-user/add-user.component'
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     HomeComponent,
     OffresComponent,
     ConnexionComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    AddUserComponent
   ],
   imports: [
     BrowserModule,

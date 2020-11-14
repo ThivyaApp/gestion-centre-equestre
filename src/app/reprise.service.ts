@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 
 export class RepriseService {
-  private baseUrl = 'http://localhost:8080/centreequestre/api/reprises';
+  private baseUrl = 'http://localhost:8081/centreequestre/api/reprises';
 
   constructor(private http: HttpClient) { }
 

@@ -20,6 +20,7 @@ import {HomeComponent} from "./home/home.component";
 import {OffresComponent} from "./offres/offres.component";
 import {ConnexionComponent} from "./connexion/connexion.component";
 import { CreateUserComponent } from "./create-user/create-user.component";
+import { AddUserComponent } from "./add-user/add-user.component";
 
 const routes: Routes = [
   { path: '' , component: HomeComponent},
@@ -36,9 +37,10 @@ const routes: Routes = [
   { path:'gestion_utilisateur', component: GestionUtilisateursComponent},
   { path:'fiche_renseignement', component: FicheRenseignementComponent},
   { path:'page-reprise', component: PageReprisesComponent},
-  {path:'inscription' , component: CreateUserComponent},
-  {path:'offres' , component: OffresComponent},
-  {path:'connexion' , component: ConnexionComponent}
+  { path:'inscription' , component: CreateUserComponent},
+  { path:'offres' , component: OffresComponent},
+  { path:'connexion' , component: ConnexionComponent},
+  { path: 'add-user', component: AddUserComponent }
 ];
 
 @NgModule({
