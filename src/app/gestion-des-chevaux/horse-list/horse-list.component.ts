@@ -3,7 +3,6 @@ import { Observable } from "rxjs";
 import { HorseService } from "../../horse.service";
 import { Horse } from "../../horse";
 
-import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -16,7 +15,7 @@ import { Router } from '@angular/router';
 export class HorseListComponent implements OnInit {
 
   horses: Observable<Horse[]>;
-  constructor(private horseService: HorseService, private router: Router, private location: Location) { }
+  constructor(private horseService: HorseService, private router: Router) { }
 
   ngOnInit(): void {
     this.reloadData();

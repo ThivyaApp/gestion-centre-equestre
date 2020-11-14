@@ -11,6 +11,9 @@ import { HorseListComponent } from './gestion-des-chevaux/horse-list/horse-list.
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ReprisesListComponent } from './gestion-des-reprises/reprises-list/reprises-list.component';
+import { CreateRepriseComponent } from './gestion-des-reprises/create-reprise/create-reprise.component';
+import { RepriseDetailsComponent } from './gestion-des-reprises/reprise-details/reprise-details.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { FormsModule } from '@angular/forms';
     PageaccueilMoniteurComponent,
     CreateHorseComponent,
     HorseDetailsComponent,
-    HorseListComponent
+    HorseListComponent,
+    ReprisesListComponent,
+    CreateRepriseComponent,
+    RepriseDetailsComponent
   ],
   imports: [
     BrowserModule,

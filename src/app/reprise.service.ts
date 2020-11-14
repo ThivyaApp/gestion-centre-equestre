@@ -6,30 +6,28 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 
-export class HorseService {
-  private baseUrl = 'http://localhost:8080/centreequestre/api/horses';
+export class RepriseService {
+  private baseUrl = 'http://localhost:8080/centreequestre/api/reprises';
 
   constructor(private http: HttpClient) { }
 
-  getHorse(id: number): Observable<any> {
+  getReprise(id: number): Observable<any> {
     return this.http.get(`${this.baseUrl}/${id}`);
   }
 
-  createHorse(horse: Object): Observable<Object> {
-    return this.http.post(`${this.baseUrl}`, horse);
+  createReprise(reprise: Object): Observable<Object> {
+    return this.http.post(`${this.baseUrl}`, reprise);
   }
 
-  updateHorse(id: number, value: any): Observable<Object> {
+  updateReprise(id: number, value: any): Observable<Object> {
     return this.http.put(`${this.baseUrl}/${id}`, value);
   }
 
-  deleteHorse(id: number): Observable<any> {
+  deleteReprise(id: number): Observable<any> {
     return this.http.delete(`${this.baseUrl}/${id}`, { responseType: 'text' });
   }
 
-  getHorseList(): Observable<any> {
+  getRepriseList(): Observable<any> {
     return this.http.get(`${this.baseUrl}`);
   }
-
-
 }

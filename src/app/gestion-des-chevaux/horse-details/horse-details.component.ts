@@ -1,9 +1,7 @@
 import { HorseService } from "../../horse.service";
 import { Horse } from "../../horse";
-import { HorseListComponent } from '../horse-list/horse-list.component';
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-horse-details',
@@ -15,7 +13,7 @@ export class HorseDetailsComponent implements OnInit {
   id: number;
   horse: Horse;
 
-  constructor(private route: ActivatedRoute,private router: Router, private horseService: HorseService, private location: Location) { }
+  constructor(private route: ActivatedRoute,private router: Router, private horseService: HorseService) { }
 
   ngOnInit() {
     this.horse = new Horse();

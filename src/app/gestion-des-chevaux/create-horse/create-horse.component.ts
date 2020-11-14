@@ -3,8 +3,6 @@ import { Horse } from "../../horse";
 
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Location } from '@angular/common';
-
 
 @Component({
   selector: 'app-create-horse',
@@ -16,7 +14,7 @@ export class CreateHorseComponent implements OnInit {
   horse: Horse = new Horse();
   submitted = false;
 
-  constructor(private horseService: HorseService, private router: Router, private location: Location) { }
+  constructor(private horseService: HorseService, private router: Router) { }
 
   ngOnInit(): void {
   }
