@@ -41,6 +41,6 @@ export class CreateUserComponent implements OnInit {
   }
 
   gotoList() {
-    this.router.navigate(['offres']);
+    this.router.navigate(['']);
   }
 }

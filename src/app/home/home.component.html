@@ -1,7 +1,7 @@
 <div class="open-close-container" (click)= toggle()></div>
 
 <form [@connexionApparait]="isOpen ? 'hiden' : 'show'" class="connexion-form" accept-charset="UTF-8" action="" method="post">
-    <input name="email" type="text" placeholder="Email ou tel" [(ngModel)]="user.username" required>
+    <input name="email" type="text" placeholder="Username" [(ngModel)]="user.username" required>
     <input name="password" type="password" placeholder="Mot de passse" [(ngModel)]="user.password" required>
     <button type="submit" (click)=onSubmit() >Valider</button>
 </form>
