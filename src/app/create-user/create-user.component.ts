@@ -29,7 +29,7 @@ export class CreateUserComponent implements OnInit {
     .addUser(this.user).subscribe(data => {
       this.user= new User();
       console.log(data)
-      // this.gotoList();
+      this.gotoList();
     }, 
     error => console.log(error));
   }

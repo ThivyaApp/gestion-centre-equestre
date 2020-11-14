@@ -7,5 +7,5 @@ export class User {
   lastname: string;
   num: string ;
   licensenum: string;
-  userType: string;
+  usertype: string;
 }

@@ -69,7 +69,21 @@ export class HomeComponent implements OnInit {
         const isGoodCredentials = (element) =>
         element.username == this.user.username && element.password == this.user.password; 
         if(this.users.findIndex(isGoodCredentials) != -1){
-          console.log("connecté bg !");
+          console.log("connecté bg ! tu es " + this.users[this.users.findIndex(isGoodCredentials)].usertype);
+          switch(this.users[this.users.findIndex(isGoodCredentials)].usertype){
+            case "Moniteur" :
+              this.router.navigate(['accueil-moniteur']);
+              break;
+            case "Administrateur" :
+              this.router.navigate(['administration']);
+              break;
+            case "Élève" :
+              this.router.navigate(['page-reprise']);
+              break;
+            default: console.log("oopsie")
+
+            
+          }
           // window.location.reload();
         }
       }),
