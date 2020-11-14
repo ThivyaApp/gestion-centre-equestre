@@ -1,0 +1,30 @@
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+<div class="boite">
+    <div class="img_cheval">
+        <img
+        src="..\..\assets\cheval.jpeg" 
+        alt="cheval"
+        width="500px"
+        height= "600px"
+        />
+    </div>
+    <div class="detailcheval">
+        <h2>Détail de {{reprise.title}}</h2> 
+
+        <hr/>
+        <div *ngIf="reprise">
+          <div>
+            <p><strong>De: </strong> {{reprise.heure_deb}} <strong> à </strong> {{reprise.heure_fin}}</p>
+          </div>
+          <div>
+            <p><strong>Nombre max de cavaliers : </strong> {{reprise.max_cavalier}}</p>
+          </div>
+          <div>
+            <p><strong>Niveau : </strong> {{reprise.niveau}}</p>
+          </div> 
+        </div>
+        
+        <br>
+        <br> 
+        <button (click)="list()" class="btn">Retour à la liste des chevaux</button><br>
+</div>

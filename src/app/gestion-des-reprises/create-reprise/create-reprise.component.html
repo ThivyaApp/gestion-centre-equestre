@@ -1,0 +1,56 @@
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+<div class="boite">
+    <div class="img_cheval">
+        <img
+        src="..\..\assets\cheval.jpeg" 
+        alt="cheval"
+        width="500px"
+        height= "600px"
+        />
+    </div>
+    <div class="creationcheval">
+      <h2>Ajouter une reprise</h2>
+      <hr/> <br> <br>
+        <div [hidden]="submitted" style="width: 400px;">
+            <form (ngSubmit)="onSubmit()">
+          
+              <div class="form-group">
+                <label for="name">Titre </label>
+                <input type="text" class="form-control" id="title" required [(ngModel)]="reprise.title" name="title">
+              </div>
+              <br>
+
+              <div class="form-group">
+                <label for="name">Heure de début </label>
+                <input type="text" class="form-control" id="heure_deb" required [(ngModel)]="reprise.heure_deb" name="heure_deb">
+              </div>
+              <br>
+
+              <div class="form-group">
+                <label for="name">Heure de fin </label>
+                <input type="text" class="form-control" id="heure_fin" required [(ngModel)]="reprise.heure_fin" name="heure_fin">
+              </div>
+              <br>
+
+              <div class="form-group">
+                <label for="name">Maximum de cavalier </label>
+                <input type="number" class="form-control" id="max_cavalier" required [(ngModel)]="reprise.max_cavalier" name="max_cavalier">
+              </div>
+              <br>
+
+              <div class="form-group">
+                <label for="name">Niveau </label>
+                <input type="number" class="form-control" id="niveau" required [(ngModel)]="reprise.niveau" name="niveau">
+              </div>
+              <br><br>
+              <button type="submit">Ajouter</button>
+            </form>
+          </div>
+          
+          <div [hidden]="!submitted">
+            <h4>You submitted successfully!</h4>
+            <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+          </div>
+    </div>
+</div>
+<button class="btn" (click)="goBack()">Retour</button>

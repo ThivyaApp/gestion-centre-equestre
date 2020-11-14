@@ -1,0 +1,26 @@
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+<div class="boite">
+    <div class="img_cheval">
+        <img
+        src="..\..\assets\cheval.jpeg" 
+        alt="cheval"
+        width="500px"
+        height= "600px"
+        />
+    </div>
+    <div class="fiches_moniteur">
+        <h2>Liste des chevaux</h2>
+        <tr *ngFor="let horse of horses | async">
+            <div class="fiche">
+            <h3>{{horse.name}}</h3>
+            <p><strong>Id :</strong> {{horse.id}}
+            <br/><strong>Type :</strong> {{horse.type}}
+            <br/><strong>Age :</strong> {{horse.age}}</p>
+
+            <button (click)="deleteHorse(horse.id)" class="button">Delete</button>
+            <button (click)="horseDetails(horse.id)" class="button" style="margin-left: 10px">Details</button>
+            </div>
+        </tr>
+    </div>
+</div>
+<button (click)="goBack()" class="btn">Retour à la page d'accueil</button><br>

@@ -1,0 +1,62 @@
+.boite {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    justify-content: flex-start
+}
+
+h2, h3 ,p{
+    color: #87C38F;
+    font-family : Montserrat;
+}
+
+h1 {
+    color : white;
+    font-family : Montserrat;
+}
+
+.fiches_moniteur{
+    margin-left: 100px;
+    padding: 15px;
+}
+
+.fiche{
+    width: 350px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    margin-top: 3px;
+    background: #F3FFF5;
+    border-radius: 5px;
+    border-left: 5px solid #87C38F;
+    /* transform: rotate(90deg);     */
+}
+
+.button {
+    background-color: #87C38F; /* Green */
+    border: none;
+    color: #F3FFF5;
+    padding: 7px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    position        : fixed;
+    bottom             : 0;
+    right : 0;
+    background-color: #87C38F;
+    border: none;
+    color: #FFDEE0;
+    padding: 7px 14px;
+    margin-right: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}

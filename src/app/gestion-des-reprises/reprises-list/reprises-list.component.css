@@ -1,0 +1,60 @@
+.boite {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    justify-content: flex-start
+}
+
+.fiches_moniteur{
+    margin-left: 100px;
+    padding: 15px;
+}
+
+.fiche{
+    width: 350px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    margin-top: 3px;
+    background: #FFDEE0;
+    border-radius: 5px;
+    border-left: 5px solid #DA2C38;
+}
+
+h3 ,p{
+    color: #DA2C38;
+    font-family : Montserrat;
+}
+
+h2, h1 {
+    color : white;
+    font-family : Montserrat;
+}
+
+.button {
+    background-color: #DA2C38;
+    border: none;
+    color: #FFDEE0;
+    padding: 7px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    position        : fixed;
+    bottom             : 0;
+    right : 0;
+    background-color: #DA2C38;
+    border: none;
+    color: #FFDEE0;
+    padding: 7px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
