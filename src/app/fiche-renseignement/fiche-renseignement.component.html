@@ -4,6 +4,7 @@
             <caption>Fiche de renseignements</caption><br>
             <tr>
                 <th>Identifiant</th>
+                <th>Pseudo</th>
                 <th>Nom</th>
                 <th>Prenom</th>
                 <th>Mail</th>
@@ -13,6 +14,7 @@
             </tr>
             <tr *ngFor="let user of users">
                 <td>{{user.id}}</td>
+                <td>{{user.username}}</td>
                 <td>{{user.firstname}}</td>    
                 <td>{{user.lastname}}</td>    
                 <td>{{user.email}}</td>        
