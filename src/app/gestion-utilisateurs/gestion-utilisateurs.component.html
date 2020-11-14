@@ -1,0 +1,25 @@
+<html>
+    <table>
+        <caption>Utilisateurs</caption>
+        <tr>
+            <td> <strong>Nom</strong></td>
+            <td> <strong>Prénom</strong></td>
+            <td> <strong>Statut du compte</strong></td>
+        </tr>
+        <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td>{{user.firstname}}</td>
+            <td><select id="Fonctionelle">
+                <option value="">--Modifier le statut du compte--</option>
+                <option value="fonctionnelle">Fonctionelle</option>
+                <option value="restreint">Restreint</option>
+                <option value="bannis">Bannis</option>
+              </select>
+              </td>
+        </tr>
+    </table>
+
+    <!-- pour la mise en page  -->
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</html>

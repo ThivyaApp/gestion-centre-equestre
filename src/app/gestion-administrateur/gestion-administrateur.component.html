@@ -1,0 +1,19 @@
+<html>
+    <table>
+        <caption>Gestion des administrateurs</caption>
+        <tr>
+            <td> <strong>Nom</strong></td>
+            <td> <strong>Prénom</strong></td>
+            <td> <strong>Accès à un compte administrateurs</strong></td>
+        </tr>
+        <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td>{{user.firstname}}</td>
+            <td><input type="checkbox" checked></td>
+        </tr>
+    </table>
+
+    <!-- pour la mise en page  -->
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</html>

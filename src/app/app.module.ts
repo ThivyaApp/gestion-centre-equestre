@@ -14,6 +14,10 @@ import { FormsModule } from '@angular/forms';
 import { ReprisesListComponent } from './gestion-des-reprises/reprises-list/reprises-list.component';
 import { CreateRepriseComponent } from './gestion-des-reprises/create-reprise/create-reprise.component';
 import { RepriseDetailsComponent } from './gestion-des-reprises/reprise-details/reprise-details.component';
+import { AdministrationComponent } from './administration/administration.component';
+import { GestionAdministrateurComponent } from './gestion-administrateur/gestion-administrateur.component';
+import { GestionUtilisateursComponent } from './gestion-utilisateurs/gestion-utilisateurs.component';
+import { FicheRenseignementComponent } from './fiche-renseignement/fiche-renseignement.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { RepriseDetailsComponent } from './gestion-des-reprises/reprise-details/
     HorseListComponent,
     ReprisesListComponent,
     CreateRepriseComponent,
-    RepriseDetailsComponent
+    RepriseDetailsComponent,
+    AdministrationComponent,
+    GestionAdministrateurComponent,
+    GestionUtilisateursComponent,
+    FicheRenseignementComponent
   ],
   imports: [
     BrowserModule,
