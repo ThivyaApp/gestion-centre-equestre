@@ -16,7 +16,9 @@ export class OffresComponent implements OnInit {
     this.restApiService.getUser().subscribe((data: User[]) => {
       console.log(data)
       this.users = data;
-    })
+    }),
+    error => console.error();
+    
   }
 
 }
