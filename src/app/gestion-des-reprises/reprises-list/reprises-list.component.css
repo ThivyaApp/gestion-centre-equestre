@@ -11,10 +11,10 @@
 }
 
 .fiche{
-    width: 200px;
+    width: 250px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 0.1em;
+    padding-top: 0.2em;
     padding-bottom: 0.1em;
     margin-top: 3px;
     background: #FFDEE0;
@@ -22,13 +22,20 @@
     border-left: 5px solid #DA2C38;
 }
 
-h3 ,p{
+h3, p{
     color: #DA2C38;
     font-family : Montserrat;
+}
+h3{
+    font-size: large; 
+}
+p{
+    font-size: small;
 }
 
 h2, h1 {
     color : white;
+    font-size: xx-large;
     font-family : Montserrat;
 }
 
@@ -36,18 +43,19 @@ h2, h1 {
     background-color: #DA2C38;
     border: none;
     color: #FFDEE0;
-    padding: 7px 14px;
+    padding: 2px 7px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     border-radius: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: small;
 }
 
-.btn{
-    position        : fixed;
-    bottom             : 0;
-    right : 0;
+.btn {
+    position:fixed;
+    bottom: 0;
+    right: 0;
     background-color: #DA2C38;
     border: none;
     color: #FFDEE0;

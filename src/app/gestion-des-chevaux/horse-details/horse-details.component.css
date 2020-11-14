@@ -27,3 +27,16 @@ p{
     margin-top: 70px;
     margin-left: 150px;
 }
+
+.button {
+    background-color: #DA2C38;
+    border: none;
+    color: #FFDEE0;
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    margin-bottom: 5px;
+    font-size: small;
+}

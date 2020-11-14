@@ -27,6 +27,9 @@ h3 ,p{
     font-family : Montserrat;
 }
 
+h3{
+    font-size: x-large;
+}
 h2, h1 {
     color : white;
     font-family : Montserrat;
@@ -42,6 +45,7 @@ h2, h1 {
     display: inline-block;
     border-radius: 12px;
     margin-bottom: 10px;
+    font-size: small;
 }
 
 .btn{
