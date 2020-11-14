@@ -47,7 +47,7 @@ color: #464646;
     width: 20vw;
     height: 40vh;
     left: 60vw;
-    top: 31vh;
+    top: 15vh;
 }
 
 input{
@@ -148,4 +148,15 @@ textarea:focus, input:focus {
     border: none;
     font-size: 18px;
     background: #DA2C38;
+  }
+
+  select{
+    color: white;
+    padding: 3px;
+    margin: 10px;
+    width: 410px;
+    height: 56px;
+    font-size: 18px;
+    background: #272321;
+    border-color: black;
   }

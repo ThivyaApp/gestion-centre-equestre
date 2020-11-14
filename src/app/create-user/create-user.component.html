@@ -6,9 +6,18 @@
 		<h1 class= "bienvenue">Bienvenue</h1>
 		<h3 class="title"> Créez un compte et rejoignez la HorseFamily</h3>
 		<form class = "inscription-form" accept-charset="UTF-8" action="" method="post">
-			<input name="username" placeholder="Entrez votre nom" type="text" [(ngModel)]="user.username" required>
+			<input name="username" placeholder="Entrez votre nom d'utilisateur" type="text" [(ngModel)]="user.username" required>
+			<input name="username" placeholder="Entrez votre prénom" type="text" [(ngModel)]="user.firstname" required>
+			<input name="username" placeholder="Entrez votre nom" type="text" [(ngModel)]="user.lastname" required>
+			<input name="num" placeholder="Numéro de téléphone" type="password" [(ngModel)]="user.num" required>
 			<input name="password" placeholder="Mot de passe" type="password" [(ngModel)]="user.password" required>
 			<input name="confirm-password" placeholder="Confirmez le mot de passe" type="password" required>
+			<select name="usertype" [(ngModel)]="user.usertype" reqired>
+					<option value="Moniteur" >Moniteur</option>
+					<option value="Administrateur">Administrateur</option>
+					<option value="Élève" selected>Élève</option>
+			</select>
+			<input name="license" placeholder="Numéro de license" type="text" required>
 			<label class="container">
 				J'accepte les conditions générales d'utilisations
 				<input type="checkbox" class="cgu" required>
