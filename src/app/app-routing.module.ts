@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
 import { AdministrationComponent } from './administration/administration.component';
 import { FicheRenseignementComponent } from './fiche-renseignement/fiche-renseignement.component';
 import { GestionAdministrateurComponent } from './gestion-administrateur/gestion-administrateur.component';
@@ -15,7 +16,13 @@ import { CreateRepriseComponent } from './gestion-des-reprises/create-reprise/cr
 import { RepriseDetailsComponent } from './gestion-des-reprises/reprise-details/reprise-details.component';
 import { PageReprisesComponent } from './page-reprises/page-reprises.component';
 
+import {HomeComponent} from "./home/home.component";
+import {OffresComponent} from "./offres/offres.component";
+import {ConnexionComponent} from "./connexion/connexion.component";
+import { CreateUserComponent } from "./create-user/create-user.component";
+
 const routes: Routes = [
+  { path: '' , component: HomeComponent},
   { path: 'accueil-moniteur', component: PageaccueilMoniteurComponent },
   { path: 'chevaux', component: HorseListComponent },
   { path: 'ajout-cheval', component: CreateHorseComponent },
@@ -28,7 +35,10 @@ const routes: Routes = [
   { path:'gestion_administrateur', component: GestionAdministrateurComponent},
   { path:'gestion_utilisateur', component: GestionUtilisateursComponent},
   { path:'fiche_renseignement', component: FicheRenseignementComponent},
-  { path:'page-reprise', component: PageReprisesComponent}
+  { path:'page-reprise', component: PageReprisesComponent},
+  {path:'inscription' , component: CreateUserComponent},
+  {path:'offres' , component: OffresComponent},
+  {path:'connexion' , component: ConnexionComponent}
 ];
 
 @NgModule({

@@ -1,0 +1,19 @@
+<div class="image-container">
+	
+	<img class="img" 
+		alt="image principale" 
+		src="../../assets/cheval-inscription.jpeg">
+		<h1 class= "bienvenue">Bienvenue</h1>
+		<h3 class="title"> Créez un compte et rejoignez la HorseFamily</h3>
+		<form class = "inscription-form" accept-charset="UTF-8" action="" method="post">
+			<input name="username" placeholder="Entrez votre nom" type="text" [(ngModel)]="user.username" required>
+			<input name="password" placeholder="Mot de passe" type="password" [(ngModel)]="user.password" required>
+			<input name="confirm-password" placeholder="Confirmez le mot de passe" type="password" required>
+			<label class="container">
+				J'accepte les conditions générales d'utilisations
+				<input type="checkbox" class="cgu" required>
+				<span class="checkmark"></span>
+			</label>
+			<button type="submit" (click)="onSubmit()">Valider</button>
+		</form>
+</div>

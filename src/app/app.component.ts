@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+// Angular Forms Modules
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
+import { RestapiService } from './restapi.service';
+
 
 
 @Component({
@@ -8,4 +13,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gestion-centre-equestre';
+  username:string;
+  password:string;
+  message:any;
+
+
+  constructor() { }
+
 }

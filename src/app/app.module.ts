@@ -9,8 +9,6 @@ import { CreateHorseComponent } from './gestion-des-chevaux/create-horse/create-
 import { HorseDetailsComponent } from './gestion-des-chevaux/horse-details/horse-details.component';
 import { HorseListComponent } from './gestion-des-chevaux/horse-list/horse-list.component';
 
-import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
 import { ReprisesListComponent } from './gestion-des-reprises/reprises-list/reprises-list.component';
 import { CreateRepriseComponent } from './gestion-des-reprises/create-reprise/create-reprise.component';
 import { RepriseDetailsComponent } from './gestion-des-reprises/reprise-details/reprise-details.component';
@@ -19,6 +17,14 @@ import { GestionAdministrateurComponent } from './gestion-administrateur/gestion
 import { GestionUtilisateursComponent } from './gestion-utilisateurs/gestion-utilisateurs.component';
 import { FicheRenseignementComponent } from './fiche-renseignement/fiche-renseignement.component';
 import { PageReprisesComponent } from './page-reprises/page-reprises.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HomeComponent } from './home/home.component';
+import { OffresComponent } from './offres/offres.component';
+import { ConnexionComponent } from './connexion/connexion.component';
+import { RestapiService } from './restapi.service';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CreateUserComponent } from './create-user/create-user.component';
 
 @NgModule({
   declarations: [
@@ -35,15 +41,22 @@ import { PageReprisesComponent } from './page-reprises/page-reprises.component';
     GestionAdministrateurComponent,
     GestionUtilisateursComponent,
     FicheRenseignementComponent,
-    PageReprisesComponent
+    PageReprisesComponent,
+    HomeComponent,
+    OffresComponent,
+    ConnexionComponent,
+    CreateUserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgbModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [RestapiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

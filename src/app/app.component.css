@@ -1,0 +1,43 @@
+.top-header{
+    background : white;
+    color: black;
+    height: 3vh;
+    width: 100%;
+    text-align: end;
+}
+.top-header a{
+    color: black;
+    margin-right: 1em;
+    font-weight: bolder;
+
+}
+
+header{
+    color: white;
+}
+.nav-container{
+    text-align: right;
+    padding: 1em;
+    /* background: pink; */
+}
+.nav-container a {
+    font-weight: bolder;
+    color :white;
+    margin-right: 3em;
+    padding: 0.5em;
+}
+.nav-container .inscription-button{
+    background: #DA2C38;
+}
+
+.nav-container .connexion-button{
+    background: white;
+    color: black;
+    margin-right: 1em;
+}
+.container{
+    /* background: green; */
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat-Medium';
+}

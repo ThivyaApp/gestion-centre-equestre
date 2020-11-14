@@ -1,8 +1,24 @@
-<h1>
-<nav>
-    <a routerLink="/accueil-moniteur">Page d'accueil des moniteurs </a>
-    <a routerLink="/administration"> Administration</a>
-    <a routerLink="/page-reprise"> Reprise</a>
-</nav>
-</h1>
-<router-outlet></router-outlet>
+<div class="top-header">
+    <a href="#" routerLink="/moniteur">Espace moniteur</a>
+</div>
+<header>
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <a href="#" routerLink="/">Home</a>
+                <a href="#" routerLink="/centre">Le centre</a>
+                <a href="#" routerLink="/activites">Activités</a>
+                <a href="#" routerLink="/offres">Offres</a>
+                <a href="#" routerLink="/inscription" class="inscription-button">Inscription</a>
+                <a href="#" routerLink="/connexion" class="connexion-button">Connexion</a>
+                <a href="#" routerLink="/accueil-moniteur">Page d'accueil des moniteurs </a>
+                <a href="#" routerLink="/administration"> Administration</a>
+                <a href="#" routerLink="/page-reprise"> Reprise</a>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
