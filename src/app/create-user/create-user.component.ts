@@ -27,9 +27,9 @@ export class CreateUserComponent implements OnInit {
   save() {
     this.restapiService
     .addUser(this.user).subscribe(data => {
-      console.log(data)
       this.user= new User();
-      this.gotoList();
+      console.log(data)
+      // this.gotoList();
     }, 
     error => console.log(error));
   }

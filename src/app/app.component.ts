@@ -14,7 +14,7 @@ import { RestapiService } from './restapi.service';
 export class AppComponent {
   title = 'gestion-centre-equestre';
   
-  isConnected: false;
+  isConnected = false;
   constructor() { }
 
 }

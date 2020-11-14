@@ -9,6 +9,11 @@
 			<input name="username" placeholder="Entrez votre nom" type="text" [(ngModel)]="user.username" required>
 			<input name="password" placeholder="Mot de passe" type="password" [(ngModel)]="user.password" required>
 			<input name="confirm-password" placeholder="Confirmez le mot de passe" type="password" required>
+			<select name="usertype" ng-model="user.userType">
+					<option value="Moniteur" >Moniteur</option>
+					<option value="Administrateur">Administrateur</option>
+					<option value="Élève" selected>Élève</option>
+			</select>
 			<label class="container">
 				J'accepte les conditions générales d'utilisations
 				<input type="checkbox" class="cgu" required>

@@ -9,7 +9,7 @@ import {
 } from '@angular/animations';
 import { RestapiService } from '../restapi.service';
 import { Router } from '@angular/router';
- 
+import {AppComponent} from '../app.component'
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -68,8 +68,10 @@ export class HomeComponent implements OnInit {
         console.log(this.user)
         const isGoodCredentials = (element) =>
         element.username == this.user.username && element.password == this.user.password; 
-        console.log(this.users.findIndex(isGoodCredentials))
-
+        if(this.users.findIndex(isGoodCredentials) != -1){
+          console.log("connecté bg !");
+          // window.location.reload();
+        }
       }),
       error => console.error();
       
